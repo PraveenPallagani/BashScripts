@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+# fibonacci function 
+function fibonacci() 
+{
+		return $1
+}
+
+echo "How many fibonacci numbers you want ?\n"
+
+read n
+
+echo -n "First $n fibonacci values : "
+for (( i=0; i<n; i++ ))
+do
+	fibonacci $i
+	echo -n "$?"
+done
+
+echo ""
+

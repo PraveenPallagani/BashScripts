@@ -1,0 +1,44 @@
+#!/bin/sh
+
+# for loop example
+echo "FOR LOOP EXAMPLE"
+for i in 0 1 2 3 4 5 6 7 8 9
+do 
+echo $i
+done
+
+# while loop example
+echo "WHILE LOOP EXAMPLE"
+i=0
+while [ $i -lt 10 ]
+do 
+echo $i
+i=`expr $i + 1`
+done
+
+
+# until loop example
+echo "UNTIL LOOP EXAMPLE"
+i=0
+until [ $i -eq 10 ] 
+do 
+echo $i
+i=`expr $i + 1 `
+done
+
+
+# nested for loops example
+echo "NESTED FOR LOOP EXAMPLES"
+i=0
+while [ $i -lt 10 ]
+do 
+	j=$i
+	while [ $j -ge 0 ]
+	do
+		echo -n "$j 
+"
+	done
+	i=`expr $i + 1`
+	echo
+done
+

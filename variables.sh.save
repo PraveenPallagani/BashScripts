@@ -1,0 +1,17 @@
+
+#declaring a variable
+name="Praveen Pallagani"
+echo $name
+
+#make the variable readonly or constant
+readonly name 
+
+# name="Naveen Pallgani" # it cannot be done
+
+# delete the variable
+# unset name
+echo "After unset value of name : $name"
+
+another_name = "Naveen Pallagani"
+
+echo "Another Name (readonly by default) : $another_name"
